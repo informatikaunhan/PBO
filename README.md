@@ -21,19 +21,19 @@ Repositori bahan pembelajaran **Pemrograman Berorientasi Objek (PBO301)**, Progr
 - Pertemuan 15 — Interaksi Obyek: Sequence Diagram, Use Case, dan Studi Kasus Terintegrasi
 - Pertemuan 16 — UAS
 
-## Isi setiap folder pertemuan
+## Isi repositori
 
-Setiap pertemuan reguler memuat bahan ajar, slide, bahan belajar mandiri/GitHub, dan bahan praktikum mandiri. Source code menggunakan **C++17** dan diuji dengan `-Wall -Wextra -pedantic`.
+Folder pertemuan reguler berisi **bahan belajar mandiri GitHub** yang telah diaudit dan dinormalisasi. Pertemuan 8 dan 16 diberi penanda UTS/UAS. Source code menggunakan **C++17** dengan baseline `-std=c++17 -Wall -Wextra -pedantic`.
 
 ## Standar visual
 
-Paket telah diaudit dan dinormalisasi menggunakan **PBO301 Style Guide v1.2**: dokumen A4 dengan margin 18 mm, Noto Sans/Noto Sans Mono, palet navy–marun–emas, identitas UNHAN, dan slide 16:9 dengan teks minimum 18 pt.
+Paket pembelajaran telah diaudit menggunakan **PBO301 Style Guide v1.2**: dokumen A4 margin 18 mm, Noto Sans/Noto Sans Mono, palet navy–marun–emas, identitas UNHAN, dan slide 16:9 dengan teks minimum 18 pt.
 
 ## Dokumen acuan
 
-- `silabus_PBO_OBE-2.md`
-- `PBO301_STYLE_GUIDE_v1.2_AUDITED.md`
-- `PBO301_AUDIT_FINAL_P01-P15.md`
+- [`SILABUS_RINGKAS.md`](SILABUS_RINGKAS.md)
+- [`PBO301_STYLE_GUIDE_v1.2_AUDITED.md`](PBO301_STYLE_GUIDE_v1.2_AUDITED.md)
+- [`PBO301_AUDIT_FINAL_P01-P15.md`](PBO301_AUDIT_FINAL_P01-P15.md)
 
 ## Dosen
 
