@@ -1,7 +1,7 @@
 # PBO301 - Pertemuan 1
 ## Pengantar OOP, C++ Modern, dan Pengenalan UML
 
-![Logo Universitas Pertahanan Republik Indonesia](PBO301_Pertemuan01_GitHub/assets/logo_unhan.png)
+![Logo Universitas Pertahanan Republik Indonesia](../assets/logo_unhan.png)
 
 **UNIVERSITAS PERTAHANAN REPUBLIK INDONESIA**  
 **PROGRAM STUDI INFORMATIKA - FAKULTAS TEKNIK DAN TEKNOLOGI PERTAHANAN**
@@ -144,7 +144,7 @@ g++ -std=c++17 -Wall -Wextra -pedantic \
 2. Generic programming membuat algoritma/type bekerja lintas tipe melalui parameterisasi; ia dapat digunakan bersama OOP.
 3. Class adalah definisi type/blueprint; object adalah instance konkret dari class.
 4. Warning dapat menandai bug potensial, konversi mencurigakan, atau intent yang tidak jelas walaupun sintaks valid.
-5. Meminta compiler menggunakan aturan bahasa C++17.
+5. Warning dapat menandai bug potensial, konversi mencurigakan, atau intent yang tidak jelas walaupun sintaks valid.
 6. Class Diagram.
 7. Sequence Diagram.
 8. Object Diagram.
