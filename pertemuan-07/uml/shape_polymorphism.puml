@@ -1,0 +1,14 @@
+@startuml
+class Shape {
+  +name() : string
+  +area() : double
+  +perimeter() : double
+  +~Shape()
+}
+class Circle
+class Rectangle
+class Triangle
+Shape <|-- Circle
+Shape <|-- Rectangle
+Shape <|-- Triangle
+@enduml

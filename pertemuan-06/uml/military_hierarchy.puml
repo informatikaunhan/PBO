@@ -1,0 +1,9 @@
+@startuml
+class MilitaryUnit
+class GroundUnit
+class InfantryUnit
+class TankUnit
+MilitaryUnit <|-- GroundUnit
+GroundUnit <|-- InfantryUnit
+GroundUnit <|-- TankUnit
+@enduml

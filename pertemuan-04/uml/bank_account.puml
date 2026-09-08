@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+class BankAccount {
+  - owner_ : std::string
+  - accountNumber_ : std::string
+  - balance_ : double
+  - readCount_ : std::size_t
+  + BankAccount(owner, accountNumber, initialBalance)
+  + owner() : const std::string& {readOnly}
+  + accountNumber() : const std::string& {readOnly}
+  + balance() : double {readOnly}
+  + deposit(amount : double) : bool
+  + withdraw(amount : double) : bool
+}
+@enduml

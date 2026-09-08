@@ -1,0 +1,11 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Soldier
+class Squad
+class Platoon
+class MapService
+class Commander
+Squad o-- "1..*" Soldier : members
+Platoon *-- "1..4" Squad : squads
+Commander --> MapService : uses
+@enduml

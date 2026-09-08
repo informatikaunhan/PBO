@@ -1,0 +1,10 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Equipment {
+  - id : int
+  - name : string
+  - ready : bool
+  + Equipment(id : int, name : string, ready : bool)
+  + display() : void
+}
+@enduml

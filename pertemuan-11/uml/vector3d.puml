@@ -1,0 +1,11 @@
+@startuml
+class Vector3D {
+  - data_: array<double,3>
+  + operator+=(rhs: Vector3D): Vector3D&
+  + operator-=(rhs: Vector3D): Vector3D&
+  + operator*=(scalar: double): Vector3D&
+  + operator[](i: size_t): double&
+  + dot(rhs: Vector3D): double
+  + magnitude(): double
+}
+@enduml

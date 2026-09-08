@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Weapon {
+  + serial: string
+  + rounds: int
+  + safeMode: bool
+  {static} + Capacity: int
+  + load(amount: int): void
+  + setSafeMode(safe: bool): void
+  + canFire(): bool
+  + print(): void
+}
+@enduml

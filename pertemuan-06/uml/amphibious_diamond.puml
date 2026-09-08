@@ -1,0 +1,14 @@
+@startuml
+class Vehicle
+class LandVehicle
+class WaterVehicle
+class AmphibiousVehicle
+Vehicle <|-- LandVehicle
+Vehicle <|-- WaterVehicle
+LandVehicle <|-- AmphibiousVehicle
+WaterVehicle <|-- AmphibiousVehicle
+note right of AmphibiousVehicle
+  C++ implementation uses virtual inheritance
+  on LandVehicle and WaterVehicle.
+end note
+@enduml

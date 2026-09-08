@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+interface IPersistable {
+  + save(path: string): bool
+}
+interface ISerializable {
+  + serialize(): string
+}
+interface ILoggable {
+  + logLine(): string
+}
+class SoldierRecord {
+  - serviceNumber_: string
+  - name_: string
+  - readiness_: int
+}
+class WeaponInventory {
+  - items_: vector<string>
+}
+SoldierRecord ..|> IPersistable
+SoldierRecord ..|> ISerializable
+SoldierRecord ..|> ILoggable
+WeaponInventory ..|> IPersistable
+WeaponInventory ..|> ISerializable
+@enduml

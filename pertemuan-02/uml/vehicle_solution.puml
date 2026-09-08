@@ -1,0 +1,12 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Vehicle {
+  + code: string
+  + fuelPercent: double
+  + operational: bool
+  {static} + MinDeployFuel: double
+  + refuel(amount: double): void
+  + canDeploy(): bool
+  + print(): void
+}
+@enduml

@@ -1,0 +1,24 @@
+@startuml
+left to right direction
+actor "Inventory Staff" as Staff
+actor "Inventory Officer" as Officer
+actor Supervisor
+Staff <|-- Officer
+Staff <|-- Supervisor
+rectangle "Weapon Inventory System" {
+  usecase "Register Item" as UC1
+  usecase "Issue Item" as UC2
+  usecase "Validate Availability" as UC3
+  usecase "Return Item" as UC4
+  usecase "Generate Readiness Report" as UC5
+  usecase "Print Report" as UC6
+  usecase "Review Audit Trail" as UC7
+}
+Officer --> UC1
+Officer --> UC2
+Officer --> UC4
+Supervisor --> UC5
+Supervisor --> UC7
+UC2 ..> UC3 : <<include>>
+UC6 ..> UC5 : <<extend>>
+@enduml

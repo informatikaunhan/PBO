@@ -1,0 +1,22 @@
+@startuml
+actor Officer
+boundary UI
+control InventoryService as Service
+entity "Catalog<WeaponRecord>" as Catalog
+entity WeaponRecord as Item
+control AuditLog as Audit
+Officer -> UI : issueItem(id, unit)
+UI -> Service : issueItem(id, unit)
+activate Service
+Service -> Catalog : findById(id)
+Catalog --> Service : Item*
+alt item exists and available
+  Service -> Item : issueTo(unit)
+  Service -> Audit : log(event)
+  Service --> UI : success
+else not found / unavailable
+  Service --> UI : error
+end
+deactivate Service
+UI --> Officer : result
+@enduml

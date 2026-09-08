@@ -1,0 +1,1 @@
+Materi dan kode ini disusun untuk pembelajaran PBO301. Logo Universitas Pertahanan Republik Indonesia digunakan sebagai identitas institusi. Toolchain yang direkomendasikan (GNU C++, CMake, Git, PlantUML/OpenJDK) tersedia sebagai perangkat lunak bebas/open-source.

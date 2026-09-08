@@ -1,0 +1,1 @@
+Materi ini disusun untuk pembelajaran PBO301 - Pemrograman Berorientasi Obyek, Program Studi Informatika, Universitas Pertahanan Republik Indonesia. Logo institusi digunakan sebagai identitas paket pembelajaran. Rujukan buku dan dokumentasi tetap tunduk pada hak cipta masing-masing pemilik.

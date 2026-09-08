@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Equipment {
+  - id : int
+  - name : string
+  - ready : bool
+  + display() : void
+}
+class ReadinessRegister {
+  + showAll() : void
+}
+ReadinessRegister "1" o-- "0..*" Equipment
+@enduml

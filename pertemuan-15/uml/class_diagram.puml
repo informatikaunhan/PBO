@@ -1,0 +1,22 @@
+@startuml
+class WeaponRecord {
+  - id_: string
+  - name_: string
+  - status_: ItemStatus
+  - holder_: string
+  + issueTo(unit)
+  + returnToStore()
+}
+class "Catalog<T>" as Catalog
+abstract class ReportPolicy { + format(record): string }
+class CompactReport
+class ReadinessReport
+class InventoryService
+class AuditLog
+ReportPolicy <|-- CompactReport
+ReportPolicy <|-- ReadinessReport
+InventoryService *-- Catalog
+InventoryService *-- AuditLog
+InventoryService ..> ReportPolicy
+Catalog o-- WeaponRecord
+@enduml

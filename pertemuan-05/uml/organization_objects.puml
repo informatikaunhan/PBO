@@ -1,0 +1,13 @@
+@startuml
+object "alpha:Platoon" as alpha
+object "red:Squad" as red
+object "blue:Squad" as blue
+object "s01:Soldier" as s01 { id = S01\nstatus = READY }
+object "s02:Soldier" as s02 { id = S02\nstatus = READY }
+object "s03:Soldier" as s03 { id = S03\nstatus = STANDBY }
+alpha *-- red
+alpha *-- blue
+red o-- s01
+red o-- s02
+blue o-- s03
+@enduml

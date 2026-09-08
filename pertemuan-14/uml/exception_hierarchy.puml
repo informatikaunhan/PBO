@@ -1,0 +1,14 @@
+@startuml
+skinparam classAttributeIconSize 0
+class "std::exception"
+class "std::runtime_error"
+class InventoryException
+class ItemNotFoundException
+class StockDepletedException
+class AccessDeniedException
+"std::exception" <|-- "std::runtime_error"
+"std::runtime_error" <|-- InventoryException
+InventoryException <|-- ItemNotFoundException
+InventoryException <|-- StockDepletedException
+InventoryException <|-- AccessDeniedException
+@enduml

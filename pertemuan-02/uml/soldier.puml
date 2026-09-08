@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Soldier {
+  + callSign: string
+  + serviceNumber: int
+  + ready: bool
+  {static} + activeRosterLimit: int
+  {static} + MaxTeamSize: int
+  + rename(callSign: string): Soldier&
+  + setReady(ready: bool): Soldier&
+  + isReady(): bool
+  + print(): void
+  {static} + setActiveRosterLimit(limit: int): void
+}
+@enduml

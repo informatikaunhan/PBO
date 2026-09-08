@@ -1,0 +1,17 @@
+@startuml
+actor Supervisor
+boundary UI
+control InventoryService as Service
+entity "Catalog<WeaponRecord>" as Catalog
+participant ReportPolicy as Policy
+Supervisor -> UI : generateReport(policy)
+UI -> Service : generateReport(policy)
+Service -> Catalog : items()
+Catalog --> Service : records
+loop each record
+  Service -> Policy : format(record)
+  Policy --> Service : line
+end
+Service --> UI : report text
+UI --> Supervisor : report
+@enduml

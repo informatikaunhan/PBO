@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class MilitaryAsset {
+  - id_: string
+  + id(): string
+  {abstract} + deploy(): void
+  {abstract} + readinessLevel(): int
+}
+class DroneAsset {
+  - batteryPercent_: int
+  + deploy(): void
+  + readinessLevel(): int
+}
+class VehicleAsset {
+  - fuelPercent_: int
+  + deploy(): void
+  + readinessLevel(): int
+}
+MilitaryAsset <|-- DroneAsset
+MilitaryAsset <|-- VehicleAsset
+@enduml
